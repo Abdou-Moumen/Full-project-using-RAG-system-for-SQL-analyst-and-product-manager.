@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root[data-theme="dark"] {
+  --bg-base:        #0a0a0f;
+  --bg-surface:     #0d0d14;
+  --bg-elevated:    #14141f;
+  --bg-hover:       #1a1a28;
+  --border:         #1e1e2e;
+  --border-strong:  #2e2e42;
+  --text-primary:   #e8e6df;
+  --text-secondary: #888;
+  --text-muted:     #444;
+  --text-faint:     #2a2a3a;
+  --accent:         #6c63ff;
+  --accent-dim:     #3d3980;
+  --success:        #10b981;
+  --warning:        #f59e0b;
+  --danger:         #ef4444;
+  --tooltip-bg:     #14141f;
+  --scrollbar:      #2a2a3a;
+}
+
+:root[data-theme="light"] {
+  --bg-base:        #f5f4f0;
+  --bg-surface:     #ffffff;
+  --bg-elevated:    #f0eeea;
+  --bg-hover:       #e8e6e0;
+  --border:         #e2dfd8;
+  --border-strong:  #c8c5be;
+  --text-primary:   #1a1918;
+  --text-secondary: #6b6762;
+  --text-muted:     #a8a5a0;
+  --text-faint:     #d4d1cc;
+  --accent:         #5248e8;
+  --accent-dim:     #dddcf8;
+  --success:        #059669;
+  --warning:        #d97706;
+  --danger:         #dc2626;
+  --tooltip-bg:     #ffffff;
+  --scrollbar:      #d4d1cc;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  transition: background 0.2s, color 0.2s;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 2px; }
+
+input, button, textarea, select { font-family: inherit; }
+input::placeholder { color: var(--text-muted); }
+
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+.fade-in { animation: fadeIn 0.2s ease forwards; }
