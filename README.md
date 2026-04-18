@@ -1,0 +1,2 @@
+# Abdou-Moumen-Full-project-using-RAG-system-for-SQL-analyst-and-product-manager.
+A full-stack project implementing a Retrieval-Augmented Generation (RAG) system designed to assist both SQL analysts and product managers. The system allows natural language querying of databases, automatic SQL generation, execution, and business insight extraction — bridging the gap between technical data analysis and product decision-making.
