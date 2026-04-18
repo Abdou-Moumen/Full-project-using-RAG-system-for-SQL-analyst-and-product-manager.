@@ -191,12 +191,6 @@ All LLM-generated SQL is validated before execution:
 
 ---
 
-## 📄 License
-
-MIT License — feel free to use, modify, and distribute.
-
----
-
 ## 🙏 Acknowledgements
 
 - [LlamaIndex](https://github.com/run-llama/llama_index) for the RAG framework
